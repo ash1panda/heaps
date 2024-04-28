@@ -18,6 +18,7 @@ int main()
     pq.push(12);
     pq.push(18);
     pq.push(2);
+    cout << "Size of Priority Queue: "<< pq.size() << endl;
     cout << "Top Element (Max Element): " << pq.top()<< endl;
     pq.pop(); // Top element (Max Element is Removed from MaxHeap)
     cout << "Top Element (Max Element after popping): " << pq.top()<< endl;  // Top Element updated after popping 

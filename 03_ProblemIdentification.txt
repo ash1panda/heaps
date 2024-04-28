@@ -1,0 +1,7 @@
+Problem Identification for Heaps:
+1.) Kth Smallest Integer 
+2.) Top K frequent elements
+3.) Closest K
+4.) When Minimum and Maximum Elements are required at any point of time and they are updated at every point of time
+5.) Sorting (Sometimes)
+ 
