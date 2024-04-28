@@ -29,6 +29,6 @@ int main()
 
 /*
 Time Complexity: O(nlog(k)) 
-Space Complexity: O(n);
+Space Complexity: O(k);
 [Don't mind if I have not mentioned both of these :) ]
 */
