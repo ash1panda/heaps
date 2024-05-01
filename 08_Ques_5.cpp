@@ -13,8 +13,38 @@
 #include<iostream>
 using namespace std;
 
+
+    vector<int> topKfreqEle(vector<int>nums, int k){
+        unordered_map<int, int> mp;
+        for(auto i : nums){
+            mp[i]++;
+        }
+
+        priority_queue< pair<int,int>, vector<pair<int,int>>, greater<pair<int,int>> > minHeap;
+        for(auto i : mp){
+            minHeap.push({i.second, i.first});   // ALWAYS KEEP FREQUENCEY FIRST AND THE ELEMENT SECOND
+            if(minHeap.size()>k){
+                minHeap.pop();
+            }
+        }
+
+        vector<int> ans;
+        while(minHeap.size()!=0){
+            ans.push_back(minHeap.top().second);
+            minHeap.pop();
+        }
+
+        return ans;
+
+
+    }
 int main()
 {
+    vector<int> vec = topKfreqEle({1,1,1,2,2,3},2);
+    for(auto i : vec){
+        cout << i << " ";
+    }
+
 
 return 0;
 }
